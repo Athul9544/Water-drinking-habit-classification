@@ -11,10 +11,10 @@ with open(fname,'rb') as f:
     
 glass=st.number_input("Glasses of water per day")
 exe=st.number_input("Exercise_level")
-temp=st.number_input("URL_Depth")
-weight=st.number_input("TinyURL")
-age=st.number_input("DNS_Record")
-gender=st.number_input("Web_Traffic")
+temp=st.number_input("Body Temperature")
+weight=st.number_input("Body Weight")
+age=st.number_input("Age")
+gender=st.number_input("Gender")
 
 def low():
     st.subheader("What to do (LOW DRINKER):")
@@ -57,3 +57,4 @@ if st.button("predict") :
      print("MODERATE")
 
      mod()
+
