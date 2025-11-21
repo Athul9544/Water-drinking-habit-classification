@@ -4,7 +4,7 @@ from os import path
 import pickle
 
 st.title("Water drinking habit classification")
-fname="data.pkl"
+fname="model.pkl"
 with open(fname,'rb') as f:
     lr=pickle.load(f)
 
@@ -57,4 +57,5 @@ if st.button("predict") :
      print("MODERATE")
 
      mod()
+
 
